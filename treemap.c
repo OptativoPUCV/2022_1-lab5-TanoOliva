@@ -109,13 +109,13 @@ Pair * firstTreeMap(TreeMap * tree) {
 Pair * nextTreeMap(TreeMap * tree) {
     
     
-    TreeNode * aux = tree->current;
+    TreeMap * aux = tree;
     TreeNode * aux2;
-    if (aux->right != NULL){
+    if (aux->current->right != NULL){
         return (minimum(aux));
     }
-    aux2 = aux->parent;
-    while (aux2 != NULL && aux == aux2->right){
+    aux2 = aux->current->parent;
+    while (aux2 != NULL && aux->current == aux2->right){
         aux = aux2;
         aux2 = aux2->parent;
     }
