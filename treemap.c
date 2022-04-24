@@ -100,10 +100,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
+    TreeNode* first=minimum(tree->root);
+    tree->current=first;
+    return first->pair;
     return NULL;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+    
     /*
     TreeNode * aux = tree->current;
     TreeNode * aux2;
