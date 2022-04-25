@@ -136,6 +136,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             z=z->parent;
         }
     }
+    return NULL;
 
        
     /*
