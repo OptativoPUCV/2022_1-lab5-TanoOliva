@@ -80,7 +80,7 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
-    tree->root->left = NULL;
+    
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
@@ -127,7 +127,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     tree->current=aux;
     return aux->pair;
     }
-    
+    /*
     while (1){
         if(otroaux->pair->value>aux->pair->value){
             tree->current = otroaux;
@@ -136,13 +136,12 @@ Pair * nextTreeMap(TreeMap * tree) {
             otroaux = otroaux->parent;
         }
     }
-    
-    /*
+    */
     while (otroaux != NULL && aux != otroaux->right){
         aux=otroaux;
         otroaux=aux->parent;
     }
     tree->current = otroaux;
     return otroaux->pair;
-    */
+    
 }
