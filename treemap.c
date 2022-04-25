@@ -127,16 +127,10 @@ Pair * nextTreeMap(TreeMap * tree) {
     tree->current=aux;
     return aux->pair;
     }
-    
-    while (1){
-        if(otroaux->pair->key > aux->pair->key){
-            tree->current = otroaux;
-            return otroaux->pair;
-        }else{
-            otroaux = otroaux->parent;
-        }
-        printf("\n\nUwU\n\n");
-    }
+
+
+    return NULL;
+       
     /*
     while (otroaux != NULL && aux != otroaux->right){
         otroaux=otroaux->parent;
@@ -145,3 +139,4 @@ Pair * nextTreeMap(TreeMap * tree) {
     return otroaux->pair;
     */
 }
+
