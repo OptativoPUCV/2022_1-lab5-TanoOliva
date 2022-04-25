@@ -129,7 +129,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     
     while (1){
-        if(otroaux->pair->key>aux->pair->key){
+        if(otroaux->pair->value>aux->pair->value){
             tree->current = otroaux;
             return otroaux->pair;
         }else{
