@@ -302,3 +302,9 @@ treemap.c:124:16: error: unused variable 'otroaux' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 88c6ce6
+Sun Apr 24 22:53:06 HSP 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|4
+total_score: 25/70
+f246cb3
