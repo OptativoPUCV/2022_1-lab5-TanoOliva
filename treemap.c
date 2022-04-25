@@ -135,6 +135,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if (node == NULL){
         return NULL;
     }
+
+    return tree->current->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
