@@ -128,7 +128,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     return aux->pair;
     }
     
-    while (aux!=NULL){
+    while (otroaux != NULL){
         if(otroaux->pair->value>aux->pair->value){
             tree->current = otroaux;
             return otroaux->pair;
