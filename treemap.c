@@ -128,8 +128,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     return aux->pair;
     }
     
-    while (otroaux != NULL){
-        if(otroaux->pair->value>aux->pair->value){
+    while (1){
+        if(otroaux->pair->key > aux->pair->key){
             tree->current = otroaux;
             return otroaux->pair;
         }else{
