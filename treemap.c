@@ -135,6 +135,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         }else{
             otroaux = otroaux->parent;
         }
+        printf("\n\nUwU\n\n");
     }
     /*
     while (otroaux != NULL && aux != otroaux->right){
